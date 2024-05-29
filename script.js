@@ -36,3 +36,8 @@ ScrollReveal().reveal(".header-content h1", {
     delay: 1000,
 });
 
+ScrollReveal().reveal(".banner-card", {
+    duration: 1000,
+    interval: 500,
+});
+
