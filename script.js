@@ -41,3 +41,8 @@ ScrollReveal().reveal(".banner-card", {
     interval: 500,
 });
 
+ScrollReveal().reveal(".order-card", {
+    ...scrollRevealOption,
+    interval: 500,
+});
+
