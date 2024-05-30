@@ -330,6 +330,46 @@ nav {
     margin-bottom: 1rem;
 }
 
+
+
+.reservation {
+    position: relative;
+    isolation: isolate;
+    height: 100vh;
+}
+
+.reservation-container h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: var(--header-font-2);
+    color: var(--text-dark);
+    text-align: center;
+}
+
+.reservation-container form {
+    max-width: 400px;
+    margin-inline: auto;
+    margin-top: 4rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.reservation-container input {
+    padding: 0.75rem 1rem;
+    outline: none;
+    border: 1px solid var(--text-dark);
+    font-size: 1rem;
+    color: var(--text-dark);
+}
+
+.reservation-container input::placeholder {
+    color: var(--text-dark);
+}   
+
+.reservation img {
+    display: none;
+}
+
 @media (width > 540px) {
     .banner-container {
         grid-template-columns: repeat(2, 1fr);
@@ -441,6 +481,29 @@ nav {
     .event-content,
     .event-content .section-header {
         text-align: left;
+    }
+
+    .reservation-container form {
+        max-width: 600px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .reservation img {
+        display: flex;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .reservation-bg-1 {
+        left: 0;
+        top: 0;
+        width: clamp(100px, 25vw, 350px);
+    }
+
+    .reservation-bg-2 {
+        right: 0;
+        bottom: 0;
+        width: clamp(100px, 20vw, 250px);
     }
 }
 

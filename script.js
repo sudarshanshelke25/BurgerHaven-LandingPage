@@ -67,3 +67,31 @@ ScrollReveal().reveal(".event-content .section-description", {
     delay: 1500,
 });
 
+ScrollReveal().reveal(".reservation .reservation-bg-1", {
+    ...scrollRevealOption,
+    origin: "left",
+});
+
+ScrollReveal().reveal(".reservation .reservation-bg-2", {
+    ...scrollRevealOption,
+    origin: "right",
+});
+
+ScrollReveal().reveal(".reservation-container h3", {
+    ...scrollRevealOption,
+    delay: 500,
+});
+
+ScrollReveal().reveal(".reservation-container .section-header", {
+    ...scrollRevealOption,
+    delay: 1000,
+});
+
+ScrollReveal().reveal(".reservation-container form", {
+    ...scrollRevealOption,
+    delay: 1500,
+});
+
+
+
+
