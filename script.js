@@ -46,3 +46,24 @@ ScrollReveal().reveal(".order-card", {
     interval: 500,
 });
 
+ScrollReveal().reveal(".event-image", {
+    ...scrollRevealOption,
+    origin: "top",
+});
+
+ScrollReveal().reveal(".event-content h3", {
+    ...scrollRevealOption,
+    origin: "left",
+    delay: 500,
+});
+
+ScrollReveal().reveal(".event-content .section-header", {
+    ...scrollRevealOption,
+    delay: 1000,
+});
+
+ScrollReveal().reveal(".event-content .section-description", {
+    ...scrollRevealOption,
+    delay: 1500,
+});
+

@@ -308,6 +308,28 @@ nav {
     line-height: 1.75rem;
 }
 
+.event-grid{
+    display: grid;
+    gap: 2rem;
+    padding: 1rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.event-content {
+    text-align: center;
+}
+
+.event-content h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: var(--header-font-2);
+    color: var(--text-dark);
+}
+
+.event-content .section-header {
+    margin-bottom: 1rem;
+}
+
 @media (width > 540px) {
     .banner-container {
         grid-template-columns: repeat(2, 1fr);
@@ -405,6 +427,20 @@ nav {
 
     .order-grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .event-grid {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .event-image {
+        grid-area: 1/2/2/3;
+    }
+
+    .event-content,
+    .event-content .section-header {
+        text-align: left;
     }
 }
 
