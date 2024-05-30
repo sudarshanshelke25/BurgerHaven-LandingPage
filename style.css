@@ -335,7 +335,7 @@ nav {
 .reservation {
     position: relative;
     isolation: isolate;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .reservation-container h3 {
@@ -368,6 +368,86 @@ nav {
 
 .reservation img {
     display: none;
+}
+
+.footer {
+    background-image: url("assets/footer-bg.png");
+    background-position:  center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer-logo {
+    display: flex;
+}
+
+.footer-logo a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--white);
+}
+
+.footer-logo img {
+    max-width: 45px;
+}
+
+.footer-logo span {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--white);
+    width: 220px;
+    font-family: var(--logo-font);
+    text-align: center;
+}
+
+.footer-content {
+    margin-top: 2rem;
+    display: grid;
+    gap: 2rem;
+}
+
+.footer-content p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--white);
+    line-height: 1.75rem;
+}
+
+.footer-links {
+    list-style: none;
+    display: grid;
+    gap: 1rem;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.footer-links li span {
+    font-size: 1.25rem;
+}
+
+.footer-socials {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-socials a {
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.footer-socials a:hover {
+    color: var(--secondary-color);
+}
+
+.footer-bar {
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: var(--white);
+    text-align: center;
 }
 
 @media (width > 540px) {
@@ -504,6 +584,18 @@ nav {
         right: 0;
         bottom: 0;
         width: clamp(100px, 20vw, 250px);
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-links {
+        justify-content: flex-end;
+    }
+
+    .footer-socials {
+        justify-content: flex-end;
     }
 }
 
